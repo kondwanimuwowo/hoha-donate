@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donations | House of Hope Africa</title>
+    <meta
+      name="description"
+      content="Partnering with House of Hope Africa means standing with vulnerable communities to bring hope, healing and lasting change. Give in Zambian Kwacha with mobile money."
+    />
+    <meta name="theme-color" content="#fffcf2" />
+    <meta property="og:title" content="Donations | House of Hope Africa" />
+    <meta
+      property="og:description"
+      content="Your support helps us expand life-saving programs and uplift families across the nation."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#donate">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="logo" href="https://www.houseofhopeafrica.org/">
+        <img src="/images/logo.avif" alt="House of Hope Africa" />
+      </a>
+
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile">
+          <a href="https://www.houseofhopeafrica.org/about">About</a>
+          <a href="https://www.houseofhopeafrica.org/our-team">Team</a>
+          <a href="https://www.houseofhopeafrica.org/programs">Programs</a>
+          <a href="https://www.houseofhopeafrica.org/get-involved">Get involved</a>
+          <a href="https://www.houseofhopeafrica.org/gallery">Gallery</a>
+          <a href="https://www.houseofhopeafrica.org/contact">Contact</a>
+        </nav>
+      </details>
+
+      <nav class="desktop-nav" aria-label="Main">
+        <a href="https://www.houseofhopeafrica.org/about">About</a>
+        <a href="https://www.houseofhopeafrica.org/our-team">Team</a>
+        <a href="https://www.houseofhopeafrica.org/programs">Programs</a>
+        <a href="https://www.houseofhopeafrica.org/get-involved">Get involved</a>
+        <a href="https://www.houseofhopeafrica.org/gallery">Gallery</a>
+        <a href="https://www.houseofhopeafrica.org/contact">Contact</a>
+      </nav>
+
+      <a class="header-donate" href="#donate">
+        Donate
+        <svg viewBox="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" aria-hidden="true">
+          <path d="M0 6h15M10 1l5 5-5 5" />
+        </svg>
+      </a>
+    </header>
+
+    <main>
+      <section class="donate" id="donate">
+        <div id="donate-intro">
+          <h1>Make a difference</h1>
+          <p class="lede">
+            Change starts with people like you. Your donation helps make a real impact, one action
+            at a time. Together, we can do more.
+          </p>
+        </div>
+
+        <form id="donate-form">
+          <fieldset>
+            <legend>Amount (ZMW)</legend>
+            <div class="options options-amount" id="amounts"></div>
+          </fieldset>
+
+          <div class="field" id="other-field" hidden>
+            <label for="other-amount">Your amount in Kwacha</label>
+            <input id="other-amount" type="number" inputmode="decimal" min="1" max="100000" step="0.01" />
+          </div>
+
+          <fieldset>
+            <legend>Mobile money network</legend>
+            <div class="options options-network" id="networks"></div>
+          </fieldset>
+
+          <div class="field">
+            <label for="phone">Mobile money number</label>
+            <input
+              id="phone"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel-national"
+              placeholder="0971234567"
+              required
+            />
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+
+          <button class="donate-button" id="donate-button" type="submit">Donate</button>
+        </form>
+
+        <div class="status-panel" id="status-panel" aria-live="polite" hidden>
+          <h1 id="status-title" tabindex="-1"></h1>
+          <div class="status-indicator" id="status-indicator" hidden><span></span></div>
+          <p id="status-body"></p>
+          <p class="status-reference" id="status-reference" hidden></p>
+          <button class="secondary-button" id="status-action" type="button" hidden></button>
+        </div>
+
+        <div class="custom-note">
+          <p>
+            Want to make a custom donation? Get in touch with our team and we’ll help tailor your
+            contribution to make the impact you care about most.
+          </p>
+          <p>
+            <a href="https://www.houseofhopeafrica.org/contact">Contact us</a> to discuss your
+            preferred amount, purpose, or ongoing support, and we’ll guide you through the process.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Donor Testimonials</h2>
+        <div class="testimonial-grid">
+          <img
+            src="/images/testimonial-1.jpg"
+            width="407"
+            height="407"
+            loading="lazy"
+            alt="“We are certainly investing into ‘good soil’, with life changing results.” Peter and Jennie."
+          />
+          <img
+            src="/images/testimonial-3.jpg"
+            width="407"
+            height="407"
+            loading="lazy"
+            alt="“We love knowing that our donations go directly to these beautiful people. We receive constant feedback on miraculous results.” Phill and Dee."
+          />
+          <img
+            src="/images/testimonial-2.jpg"
+            width="407"
+            height="407"
+            loading="lazy"
+            alt="“We know that when HOHA scores, it’s a win for the entire body of Christ.” Missions/Outreach Director, MLFC."
+          />
+          <img
+            src="/images/testimonial-4.jpg"
+            width="407"
+            height="407"
+            loading="lazy"
+            alt="“See those smiles? That is why I give!” Kazz."
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <h2>Follow the journey</h2>
+          <ul class="footer-links">
+            <li><a href="https://www.houseofhopeafrica.org/">houseofhopeafrica.org</a></li>
+            <li><a href="mailto:info@houseofhopeafrica.com">info@houseofhopeafrica.org</a></li>
+            <li>#togetherwecandomore</li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/houseofhopeafrica">Instagram</a></li>
+            <li><a href="https://www.facebook.com/houseofhopeafrica/">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/company/one-hope-foundation-ltd/">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@houseofhopeafrica8654">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-side">
+          <img src="/images/charity-badge.png" width="134" height="134" loading="lazy" alt="Registered charity" />
+          <a class="outline-link" href="https://www.houseofhopeafrica.org/get-involved">Get involved</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 House of Hope Africa</p>
+    </footer>
+  </body>
+</html>

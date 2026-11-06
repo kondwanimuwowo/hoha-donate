@@ -1,0 +1,9 @@
+# Copy to .dev.vars for local dev. In production, set these in
+# Cloudflare Pages > Settings > Variables and Secrets.
+
+# Lenco v2 secret API token (server only)
+LENCO_API_SECRET_KEY=your_lenco_secret_key
+
+# Optional. Defaults to https://api.lenco.co/access/v2 (live).
+# Use the sandbox while testing:
+# LENCO_BASE_URL=https://sandbox.lenco.co/access/v2
