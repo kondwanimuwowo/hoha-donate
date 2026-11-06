@@ -51,74 +51,17 @@ a {
   outline-offset: 2px;
 }
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
-
-.skip-link:focus {
-  left: 16px;
-  top: 16px;
-  z-index: 1;
-  padding: 8px 12px;
-  background: var(--page);
-}
-
 /* Header */
 
 .site-header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 48px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 24px;
+  padding: 40px 16px;
 }
 
-.logo img {
+.logo {
   width: 134px;
   height: auto;
-}
-
-.desktop-nav {
-  display: flex;
-  gap: 30px;
-}
-
-.desktop-nav a {
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.desktop-nav a:hover,
-.mobile-menu a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.header-donate {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  padding: 10px 22px 10px 17px;
-  border: 1px solid var(--ink);
-  font-size: 15px;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  transition: background-color 150ms ease;
-}
-
-.header-donate:hover {
-  background: var(--brand-yellow-soft);
-}
-
-.mobile-menu {
-  display: none;
 }
 
 /* Donation form */
@@ -268,15 +211,6 @@ legend,
   opacity: 0.7;
 }
 
-.custom-note {
-  margin-top: 64px;
-  font-size: 15px;
-}
-
-.custom-note p {
-  margin: 0 0 20px;
-}
-
 /* Payment status */
 
 .status-panel p {
@@ -330,34 +264,13 @@ legend,
   background: var(--brand-yellow-soft);
 }
 
-/* Testimonials */
-
-.testimonials {
-  width: min(1266px, calc(100% - 32px));
-  margin: 96px auto 0;
-  padding: 56px 0 100px;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-}
-
-.testimonials h2 {
-  margin: 0 0 40px;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 407px));
-  justify-content: center;
-  gap: 36px 50px;
-}
-
 /* Footer */
 
 .site-footer {
-  padding: 100px 16px 40px;
+  width: min(1266px, calc(100% - 32px));
+  margin: 96px auto 0;
+  padding: 100px 0 40px;
+  border-top: 1px solid var(--rule);
 }
 
 .footer-inner {
@@ -406,57 +319,7 @@ legend,
 
 @media (max-width: 960px) {
   .site-header {
-    justify-content: space-between;
-    gap: 16px;
     padding: 20px 16px;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-    order: 1;
-    position: relative;
-  }
-
-  .mobile-menu summary {
-    display: flex;
-    align-items: center;
-    min-height: 44px;
-    padding: 0 4px;
-    cursor: pointer;
-    list-style: none;
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-
-  .mobile-menu summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .mobile-menu nav {
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    padding: 8px 0;
-    border: 1px solid var(--ink);
-    background: var(--page);
-  }
-
-  .mobile-menu a {
-    padding: 10px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-
-  .header-donate {
-    display: none;
   }
 
   .donate {
@@ -469,17 +332,8 @@ legend,
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .testimonials {
-    margin-top: 64px;
-    padding: 40px 0 64px;
-  }
-
-  .testimonial-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
-  }
-
   .site-footer {
+    margin-top: 64px;
     padding-top: 64px;
   }
 
